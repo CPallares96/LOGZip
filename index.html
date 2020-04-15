@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>user login</title>
+</head>
+<body>
+
+	<div id = "app"></div>
+    <div class="aling">
+	
+        <img class="logo" src="img/iniciar-sesion.svg">
+		<div class="card">
+			<div class="head">
+				<div></div>
+				<a id="login" class="selected" href="#login">Ingreso</a>
+				<a id="register" href="#register">Nuevo usuario</a>
+				<div></div>
+			</div> 
+			<div class="tabs">
+				<form class="form" id="myForm">
+					<div class = "inputs">
+						<div class ="input">
+							<input placeholder = "Usuario" type="text" id="inp_usuario">
+							<img src ="img/user.svg">
+						</div>
+						<div class="input">					
+							<input placeholder = "Contraseña" type="password" id="inp_contrasena">
+							<img src ="img/pass.svg">
+						</div>
+
+						<label class="checkbox">
+							<input type="checkbox">
+							<span>Recordarme</span>
+						</label>
+					</div>
+					<button type="button" id="btnCheck">Ingresar</button>
+				</form>
+
+				<form action="insert.php" method="POST">
+					<div class = "inputs">
+						<div class ="input">
+							<input placeholder = "Correo" type="email" id="r_email" name="email" required > 
+							<img src ="img/mail.svg">
+						</div>
+						<div class="input">					
+							<input placeholder = "Usuario" type="text" id ="r_usuario" name="usuario" required >
+							<img src ="img/user.svg">
+						</div>
+						<div class="input">					
+							<input placeholder = "Contraseña" type="password" id ="r_contrasena" name="contraseNa" required>
+							<img src ="img/pass.svg">
+						</div>
+					</div>
+					<button type="button" id="btnInsert">Registrarse</button>
+			
+				</form>
+			</div>
+		</div>
+	</div>	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="01.js"></script>
+</body>
+</html>
